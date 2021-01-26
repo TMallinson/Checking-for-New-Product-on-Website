@@ -45,10 +45,10 @@ Subject: Nano Puff Hoody is in Stock!
 check out Worn Wear here: https://wornwear.patagonia.com/shop/mens?category=Jackets&size=S&sort=most_recent"""
 
         # Set the sender address and password
-        sender_email = "newproductpythonbot@gmail.com"
-        password = "84hiHMa1%#X"
+        sender_email = "new_product_python_bot@gmail.com"
+        password = "your_password"
         # Set the receiver address
-        receiver_email = "tmallinson@live.com"
+        receiver_email = "my_email@live.com"
 
         # Setup the email server
         smtp_server = "smtp.gmail.com"
