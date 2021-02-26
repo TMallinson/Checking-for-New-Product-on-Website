@@ -10,6 +10,9 @@ import time
 # Import smtplib
 import smtplib, ssl
 
+# Import environment to replace confidential credentials
+from os import environ
+
 # This script downloads the Men's Worn Wear Page already filtered by size and recent adds, and if it finds some text it emails me
 # If it does not find the text, it waits 10 minutes and downloads the page again
 
@@ -45,10 +48,10 @@ Subject: Nano Puff Hoody is in Stock!
 check out Worn Wear here: https://wornwear.patagonia.com/shop/mens?category=Jackets&size=S&sort=most_recent"""
 
         # Set the sender address and password
-        sender_email = "new_product_python_bot@gmail.com"
-        password = "your_password"
+        sender_email = environ["SENDER_EMAIL"]
+        password = environ["SENDER_PASSWORD"]
         # Set the receiver address
-        receiver_email = "my_email@live.com"
+        receiver_email = environ["RECEIVER_EMAIL"]
 
         # Setup the email server
         smtp_server = "smtp.gmail.com"
