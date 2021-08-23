@@ -1,2 +1,3 @@
-# Checking-for-New-Product-on-Website
-This script downloads a page of a website, parses it with BeautifulSoup, and sends me an email if the specified text is present.
+# Checking for When a New Product is Added to a Website
+
+This repository contains Python scripts that can scrape websites and notify me either via sms or email that a new product has been added to a website. 
