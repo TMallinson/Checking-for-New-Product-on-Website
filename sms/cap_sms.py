@@ -18,7 +18,7 @@ while True:
     # Set the URL as Worn Wear, sorted by size, category, and most recently added
     url = 'https://wornwear.patagonia.com/shop/mens-just-added?category=Shirts&size=S'
     # Set the headers like we are a browser
-    headers = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"}
+    headers = {"Your User Agent"}
     # Download the page
     response = requests.get(url, headers=headers)
     # Parse the downloaded homepage and grab all text
@@ -38,12 +38,12 @@ while True:
         # Send a text to my phone notifying me
         account_sid = TWILIO_ACCOUNT_SID
         auth_token = TWILIO_AUTH_TOKEN
-        number = "+14253997035"
+        number = TWILIO_NUMBER
 
         client = Client(account_sid, auth_token)
 
         message = client.messages.create(
-            to="+16609531019",
+            to="+your_number",
             from_= number,
             body="Patagonia Capilene Shirts are in stock on Worn Wear! Follow this link to order: https://wornwear.patagonia.com/shop/mens-just-added?category=Shirts&size=S")
 
