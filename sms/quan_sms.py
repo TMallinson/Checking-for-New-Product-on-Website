@@ -38,12 +38,12 @@ while True:
         # Send a text to my phone notifying me
         account_sid = TWILIO_ACCOUNT_SID
         auth_token = TWILIO_AUTH_TOKEN
-        number = "+14253997035"
+        number = TWILIO_NUMBER
 
         client = Client(account_sid, auth_token)
 
         message = client.messages.create(
-            to="+16609531019",
+            to="your_number",
             from_= number,
             body="Patagonia Quandary Shorts are in stock on Worn Wear! Follow this link to order: https://wornwear.patagonia.com/shop/mens-just-added?category=Shorts&size=30&size=S")
 
