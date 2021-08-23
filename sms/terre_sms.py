@@ -36,8 +36,8 @@ while True:
     # But if the word "Terrebonne Joggers" occurs any number of times
     else:
         # Send a text to my phone notifying me
-        account_sid = "ACd699b58569007d750fffde4071be77e2"
-        auth_token = "965239b91f2bb8f075b7613182229da4"
+        account_sid = TWILIO_ACCOUNT_SID
+        auth_token = TWILIO_AUTH_TOKEN
         number = "+14253997035"
 
         client = Client(account_sid, auth_token)
