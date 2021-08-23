@@ -24,7 +24,7 @@ while True:
     # Set the URL as Worn Wear, sorted by size, category, and most recently added
     url = 'https://wornwear.patagonia.com/shop/mens?category=Jackets&size=S&sort=most_recent'
     # Set the headers like we are a browser
-    headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36"}
+    headers = {"Your: User Agent"}
     # Download the page
     response = requests.get(url, headers=headers)
     # Parse the downloaded homepage and grab all text
